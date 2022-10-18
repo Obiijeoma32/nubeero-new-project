@@ -1,13 +1,15 @@
-const assign = document.querySelector(".assign"); //assign
+const assign = document.querySelectorAll(".assign"); //assign
 
 // const riderCard = document.querySelector(".modal"); //rider card list
+for (let i = 0; i < assign.length; i++) {
+  assign[i].addEventListener("click", assignHandler);
 
-assign.addEventListener("click", assignHandler);
-function assignHandler() {
-  const assignOrder = document.querySelector(".assign-order");
-  if (assignOrder) {
-    assignOrder.style.display = "block";
-    console.log("i got clicked");
+  function assignHandler() {
+    const assignOrder = document.querySelector(".assign-order");
+    if (assignOrder) {
+      assignOrder.style.display = "block";
+      console.log("i got clicked");
+    }
   }
 }
 const admin = document.querySelector(".dashboard-admin"); //admin bar
