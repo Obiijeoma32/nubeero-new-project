@@ -68,7 +68,8 @@
             <input class="search-input" type="text" placeholder="Search" />
           </div>
           <!-- Dashboard Admin -->
-          <div class="dashboard-admin">
+          <div  class="dashboard-admin">
+          
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <circle cx="18" cy="18" r="17" fill="url(#pattern0)" stroke="#FF6600" stroke-width="2" />
               <defs>
@@ -149,7 +150,7 @@
             <tbody>
               <tr class="assign">
                 <td>1</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -171,7 +172,7 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -193,7 +194,7 @@
               </tr>
               <tr>
                 <td>3</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -215,7 +216,7 @@
               </tr>
               <tr>
                 <td>4</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -237,7 +238,7 @@
               </tr>
               <tr>
                 <td>5</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -259,7 +260,7 @@
               </tr>
               <tr>
                 <td>6</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -281,7 +282,7 @@
               </tr>
               <tr>
                 <td>7</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -303,7 +304,7 @@
               </tr>
               <tr>
                 <td>8</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -325,7 +326,7 @@
               </tr>
               <tr>
                 <td>9</td>
-                <td class="table-avatar">#12594</td>
+                <td >#12594</td>
                 <td>Dec 1, 2021</td>
                 <td>Frank Murlo</td>
                 <td>312 s Wilmette Ave</td>
@@ -373,14 +374,31 @@
             </nav>
           </div>
         </footer>
+        <div class="main-modal-form">
+          <div class="main-overlay"></div>
+          <div class="modal-content">
+            <div class="modal-container">
+              <form class="modal-form">
+                <h3 class="modal-admin">Create Admin</h3>
+                <input class="main-modal-form-input" type="text" placeholder="Enter Name" />
+                <input class="main-modal-form-input" type="text" placeholder="Select Role" />
+                <input class="main-modal-form-input" type="text" placeholder="Select Priviledges" />
+                <input class="main-modal-form-input" type="text" placeholder="Select Tasks" />
+                <input class="main-modal-form-input" type="text" placeholder="Enter Department" />
+                <button class="rider-modal-submit-button" type="submit">Add Terminal</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <div class="assign-order">
           <div class="overlay"></div>
-          <div class="modal-content">
+          <div class="assign-modal-content">
             <div class="rider-container">
               <form class="rider-form">
                 <h3 class="modal-admin">Assign Order</h3>
                 <div class="rider-svg">
-                  <input class="modal-input" type="text" placeholder="Assign Rider" />
+                  <input class="assign-rider-input" type="text" placeholder="Assign Rider">
+                  
                   <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.28571 0L8 6.25L13.7143 0L16 1.25L8 10L0 1.25L2.28571 0Z" fill="#555B6A" />
                   </svg>
@@ -397,6 +415,7 @@
     
     
     <script src="./order.js"></script>
+   
     
   </body>
 </html>
