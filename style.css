@@ -257,6 +257,7 @@ table {
   width: 100%;
   text-align: center;
   font-size: 12px;
+  cursor: pointer;
 }
 .table-avatar {
   display: flex;
@@ -329,7 +330,7 @@ td {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  top: 15px;
+  top: 10px;
   z-index: 222;
   width: 100%;
   left: 1%;
@@ -480,6 +481,7 @@ td {
   justify-content: center;
   text-align: center;
   padding-top: 15px;
+  cursor: pointer;
 }
 .rider-input-button2 {
   display: flex;
@@ -492,6 +494,7 @@ td {
   margin-left: 80px;
   border: none;
   padding-top: 10px;
+  cursor: pointer;
 }
 .modal-form {
   align-items: center;
@@ -518,6 +521,7 @@ td {
   margin-top: 20px;
   padding-top: 5px;
   margin-left: 25px;
+  cursor: pointer;
 }
 .rider-container {
   border-radius: 10px;
