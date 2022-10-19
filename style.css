@@ -590,5 +590,5 @@ footer {
   color: #ffffff;
 }
 .modal {
-  display: none;
+  display: block;
 }

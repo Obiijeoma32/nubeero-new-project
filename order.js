@@ -1,49 +1,41 @@
 const assign = document.querySelectorAll(".assign"); //assign
+const assignOrder = document.querySelector(".assign-order"); //assign order modal
+const assignOrderRoot = document.querySelector(".assign-modal-content"); //root handler
 
-// const riderCard = document.querySelector(".modal"); //rider card list
+// console.log(assignOrderRoot);
 for (let i = 0; i < assign.length; i++) {
   assign[i].addEventListener("click", assignHandler);
 
   function assignHandler() {
-    const assignOrder = document.querySelector(".assign-order");
     if (assignOrder) {
       assignOrder.style.display = "block";
       console.log("i got clicked");
     }
   }
 }
-const admin = document.querySelector(".dashboard-admin"); //admin bar
-const overlay = document.querySelector(".main-overlay");
 
-// console.log(admin);
-// const viewProfile = document.querySelector(".view-user-profile"); //admin bar
-// console.log(viewProfile);
-// viewProfile.addEventListener("click", viewProfileHandler);
-admin.addEventListener("click", adminHandler);
-overlay.addEventListener("click", overlayHandler);
-// admin.addEventListener("mousemove", adminMouseOut);
+assignOrderRoot.addEventListener("click", assignHandlerHide);
+
+function assignHandlerHide() {
+  if ((assignOrder.style.display = "block")) {
+    assignOrder.style.display = "none";
+  }
+}
 
 const createAdmin = document.querySelector(".main-modal-form");
+const admin = document.querySelector(".dashboard-admin"); //admin bar
+const overlay = document.querySelector(".modal-content");
+
+admin.addEventListener("click", adminHandler);
+overlay.addEventListener("click", overlayHandler);
+
 function adminHandler() {
   if (createAdmin) {
     createAdmin.style.display = "block";
   }
 }
 function overlayHandler() {
-  createAdmin.style.display = "none";
-  console.log("something got clicked");
+  if ((createAdmin.style.display = "block")) {
+    createAdmin.style.display = "none";
+  }
 }
-// function adminMouseOut() {
-//   if (!createAdmin) {
-//     createAdmin.removeProperty("block");
-//   }
-// }
-
-// function viewProfileHandler() {
-//   const userProfile = document.querySelector(".user-profile");
-//   if (userProfile) {
-//     userProfile.style.display = "block";
-//   }
-// }
-
-// console.log();
